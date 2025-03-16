@@ -6,3 +6,5 @@ Praktikum 3
 ![Screenshot 2025-03-15 201201](https://github.com/user-attachments/assets/b3813f3b-947e-451f-ba0c-e0c1be98ab69)
 ![Screenshot 2025-03-16 224605](https://github.com/user-attachments/assets/9297f281-1244-43ac-afd9-c39ab850f9b3)
 ![image](https://github.com/user-attachments/assets/8e4ace9b-84cd-4f3b-a50a-0bb05199fe97)
+![image](https://github.com/user-attachments/assets/c0ad041f-c79a-4e9a-882b-c2b3d43f9896)
+
