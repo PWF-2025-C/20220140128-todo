@@ -8,3 +8,7 @@ Praktikum 3
 ![image](https://github.com/user-attachments/assets/8e4ace9b-84cd-4f3b-a50a-0bb05199fe97)
 ![image](https://github.com/user-attachments/assets/c0ad041f-c79a-4e9a-882b-c2b3d43f9896)
 
+Praktikum 4
+![image](https://github.com/user-attachments/assets/d61dabf2-b594-4dc9-a878-b159a9725395)
+![image](https://github.com/user-attachments/assets/873690b6-5fab-44b0-a334-3f5fd4e16906)
+![image](https://github.com/user-attachments/assets/3bbc4a23-4ec8-4a0f-a763-a8700e71fd01)
