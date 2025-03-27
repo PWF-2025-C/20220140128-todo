@@ -12,3 +12,5 @@ Praktikum 4
 ![image](https://github.com/user-attachments/assets/d61dabf2-b594-4dc9-a878-b159a9725395)
 ![image](https://github.com/user-attachments/assets/873690b6-5fab-44b0-a334-3f5fd4e16906)
 ![image](https://github.com/user-attachments/assets/3bbc4a23-4ec8-4a0f-a763-a8700e71fd01)
+![image](https://github.com/user-attachments/assets/53f9ce77-6902-4b9d-b6f3-f83d9c7b619c)
+
