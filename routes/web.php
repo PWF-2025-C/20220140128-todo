@@ -17,7 +17,7 @@ Route::middleware('auth')->group(function () {
     Route::resource('todo', TodoController::class)->except(['show']);
 
 
-    Route::patch('/todo/{todo}/complete', [TodoController::class, 'complete'])->name('todo.complete');
+Route::patch('/todo/{todo}/complete', [TodoController::class, 'complete'])->name('todo.complete');
  Route::patch('/todo/{todo}/uncomplete', [TodoController::class, 'uncomplete'])->name('todo.uncomplete');
  
  Route::get('/todo/{todo}/edit', [TodoController::class, 'edit'])->name('todo.edit');
@@ -29,6 +29,12 @@ Route::middleware('auth')->group(function () {
  Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
  Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
  Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+});
+
+Route::middleware(['auth', 'admin'])->group(function () {
+    Route::resource('user', UserController::class)->except(['show']);
+    Route::patch('/user/{user}/makeadmin', [UserController::class, 'makeadmin'])->name('user.makeadmin');
+    Route::patch('/user/{user}/removeadmin', [UserController::class, 'removeadmin'])->name('user.removeadmin');
 });
 
 Route::get('/user', [UserController::class, 'index'])->name('user.index');
