@@ -13,6 +13,7 @@
          'title',
          'is_done',
          'user_id',
+         'category_id',
          'is_complete',
      ];
  
@@ -20,4 +21,8 @@
      {
          return $this->belongsTo(User::class);
      }
+     public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
  }

@@ -22,6 +22,18 @@
                              required
                          >
                     </div>
+                    <div class="mb-6">
+                            <x-input-label for="category_id" :value="__('Category')" />
+                            <x-select id="category_id" name="category_id" class="block w-full mt-1">
+                                <option value="">Select Category</option>
+                                @foreach ($categories as $category)
+                                <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                    {{ $category->title }}
+                                </option>
+                                @endforeach
+                            </x-select>
+                            <x-input-error class="mt-2" :messages="$errors->get('category_id')" />
+                        </div>
                     <div class="flex items-center gap-2">
                         <<button 
                              type="submit"
@@ -31,9 +43,8 @@
                         </button>
                         <a 
                              href="{{ route('todo.index') }}"
-                             class="px-4 py-2 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg shadow-sm border border-red-700 dark:border-red-800 transition duration-200 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800"
-                         >
-                            Cancel
+                               class="inline-flex items-center px-4 py-2 text-xs font-semibold tracking-widest text-gray-700 uppercase transition duration-150 ease-in-out bg-white border border-gray-300 rounded-md shadow-sm dark:bg-gray-800 dark:text-gray-300 dark:border-gray-500 dark:hover:bg-gray-700 dark:hover:text-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800 disabled:opacity-25">
+                                {{ __('Cancel') }}
                         </a>
                     </div>
                 </form>

@@ -27,6 +27,18 @@
                              <p class="text-red-500 text-sm mt-2">{{ $message }}</p>
                          @enderror
                      </div>
+                     <div class="mb-6">
+                            <x-input-label for="category_id" :value="__('Category')" />
+                            <x-select name="category_id" id="category_id" class="w-full">
+                                <option value="">Empty</option>
+                                @foreach ($categories as $category)
+                                    <option value="{{ $category->id }}" {{ old('category_id') == $category->id ? 'selected' : '' }}>
+                                        {{ $category->title }}
+                                    </option>
+                                @endforeach
+                            </x-select>
+                            <x-input-error class="mt-2" :messages="$errors->get('category_id')" />
+                        </div>
  
                      <div class="flex items-center gap-2">
                          <button 
